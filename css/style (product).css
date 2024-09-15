@@ -1,8 +1,9 @@
 body {
-  background-color: #F5F5DC;
+  background: linear-gradient(135deg, #f5d6b8, #f0c48d);
+
   margin: 0;
-  font-family: "Roboto Slab", Helvetica, sans-serif; 
-  font-size: 1.3vw
+   font-family: "Roboto Slab", Helvetica, sans-serif; 
+   font-size: 1.3vw
 }
 body > header {
   background-color: #333333;
@@ -24,34 +25,42 @@ header > h1 {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  background-color:  #777676;
+  background-color: #d1bba3; /* Soft taupe */
+  color: #3b3b3b; /* Dark brown for text */
   
   list-style: none;
   margin-top: 0px;
   margin-left: 0; 
   padding: 0px;
+  border-bottom: 2px solid #d1a573;
+  padding-top: 0px; /* Add padding at the top */
+  padding-bottom: 0px; /* You can adjust bottom padding too */
+  height: auto; /* Make sure height is auto so it adjusts */
+
 }
 .navigation a {
-  text-decoration: none;
-  display: block;
-  padding: 1em;
+  display: inline-block;
+  padding: 10px 20px; /* Adjust padding for larger buttons */
+  font-size: 16px;
   color: black;
-  background-color: #D2B48C; /* Light manila folder color */
-  padding: 1em 2em; /* Increase padding for better spacing */
+  text-decoration: none;
+  background-color: #f0c48d; /* Button background color */
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  margin: 0 10px;
+  transition: all 0.3s ease;
 }
 .Home {
-  background-color: #FAF0E6; /* Lighter for active state */
+  background-color: #F5F5DC; /* Lighter for active state */
   color: #3E2723;
   font-weight: bold; 
+  
 }
 
 .navigation a:hover {
   background: #F5F5DC;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 .suspect-grid {
   display: grid;
@@ -67,6 +76,15 @@ header > h1 {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   border-radius: 10px;        /* Optional: Rounded corners */             
   text-align: center;         /* Centers text in each grid item */
+  transition: background-color 0.3s ease; /* Smooth transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+.suspect-item:hover {
+  background-color: #ffe3d3; /* Change color on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    color: #6d4f36; /* Change text color */
+    transform: scale(1.05); /* Slightly scale up the card */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase shadow */
 }
 
 .suspect-item img {
@@ -96,4 +114,5 @@ div img {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* 3D-like effect */
     margin: 20px;
 }
+
 
